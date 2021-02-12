@@ -6,7 +6,7 @@ function Blog(){
     
     return (
         <>
-                <NavItems />
+                <NavItems index={2}/>
 
         </>
     )

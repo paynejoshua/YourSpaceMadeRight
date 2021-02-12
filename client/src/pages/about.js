@@ -6,7 +6,7 @@ function About(){
     
     return (
         <>
-                <NavItems />
+                <NavItems index={1}/>
 
         </>
     )

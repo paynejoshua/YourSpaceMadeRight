@@ -5,7 +5,7 @@ function Applause(){
 
     return (
         <>
-            <NavItems />
+            <NavItems index={3}/>
         </>
     )
 }

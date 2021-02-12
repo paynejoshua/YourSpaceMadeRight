@@ -6,7 +6,7 @@ function Contact() {
 
     return (
         <>
-            <NavItems />
+            <NavItems index={4} />
 
         </>
     )

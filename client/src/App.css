@@ -45,9 +45,13 @@
 }
 
 .BGImage {
-  background-image: url("./assets/wallpaper-3329990_1920.jpg") contain;
+  background-image: url("./assets/woodenWallpaper.jpg") contain;
   margin-bottom: 2rem;    
   border-radius: .3rem;
     text-align: center;
 }
 
+.transparent {
+  background-color: transparent !important;
+  border: none !important;
+}

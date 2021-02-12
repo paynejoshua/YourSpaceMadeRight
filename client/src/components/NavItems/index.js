@@ -1,40 +1,36 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Nav from "react-bootstrap/Nav"
 
-function NavItems() {
-    const [selected, setSelected] = useState("")
-
-    function tabNav(here) {
-        
-        setSelected(here)
+function NavItems(props) {
+    
+    function getClassName(index){
+        return index === props.index ? "active" : ""
     }
 
-    console.log(selected)
-
     return (
-        <Nav variant="pills" defaultActiveKey={`/${selected}`}>
+        <Nav variant="pills">
             <Nav.Item>
-                <Nav.Link href="/home">Home</Nav.Link>
+                <Nav.Link href="/home" className={getClassName(0)}>Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="/about" eventKey="about" onClick={() => tabNav("about")}>About Me</Nav.Link>
+                <Nav.Link href="/about" className={getClassName(1)}>About Me</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="/blog" eventKey="blog">Blog</Nav.Link>
+                <Nav.Link href="/blog" className={getClassName(2)}>Blog</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="/applause" eventKey="applause">Applause</Nav.Link>
+                <Nav.Link href="/applause" className={getClassName(3)}>Applause</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="/contact" eventKey="contact">Contact</Nav.Link>
+                <Nav.Link href="/contact" className={getClassName(4)}>Contact</Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link
-                    href="/schedule" eventKey="schedule">Schedule
+                    href="/schedule" className={getClassName(5)}>Schedule
                         </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="/services" eventKey="services">Services</Nav.Link>
+                <Nav.Link href="/services" className={getClassName(6)}>Services</Nav.Link>
             </Nav.Item>
         </Nav>
     )

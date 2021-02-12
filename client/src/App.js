@@ -1,15 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Switch from "react-router-dom/Switch";
-import Link from "react-router-dom/Link";
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import About from "./pages/about";
 import Applause from "./pages/applause";
 import Blog from "./pages/blog";
 import Contact from "./pages/contact";
 import Home from "./pages/home";
-import Schedule from "./pages/schedule"
-import Services from "./pages/services"
+import Schedule from "./pages/schedule";
+import Services from "./pages/services";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -17,6 +15,7 @@ function App() {
   return (
     <Router> 
      <Switch>
+      
        <Route exact path="/" component={Home} />
        <Route exact path="/home" component={Home} />
        <Route exact path="/about" component={About} />
@@ -27,6 +26,7 @@ function App() {
        <Route exact path="/services" component={Services} />
        
      </Switch>
+
    </Router>
   );
 }

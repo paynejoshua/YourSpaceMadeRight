@@ -5,7 +5,7 @@ function Services(){
 
     return (
         <>
-                <NavItems />
+                <NavItems index={6}/>
 
         </>
     )
