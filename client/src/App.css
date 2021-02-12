@@ -45,10 +45,11 @@
 }
 
 .BGImage {
-  background-image: url("./assets/woodenWallpaper.jpg") contain;
-  margin-bottom: 2rem;    
-  border-radius: .3rem;
-    text-align: center;
+  background-image: url("./assets/woodenWallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .transparent {

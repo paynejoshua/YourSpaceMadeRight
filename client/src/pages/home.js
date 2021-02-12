@@ -2,7 +2,6 @@ import React from "react";
 import NavItems from "../components/NavItems";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import SocialMedia from "../components/SocialMedia"
-import HomeImage from "../assets/woodenWallpaper.jpg"
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -12,13 +11,8 @@ function Home() {
 
     return (
         <>
-            <div style={{ 
-                backgroundImage: `url(${HomeImage})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center"
+            <div className="BGImage">
 
-                }}>
             <Jumbotron className="text-center">
                 <h1>Your Space Made Right</h1>
                 <NavItems index={0} />
