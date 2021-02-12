@@ -15,13 +15,13 @@ function SocialButtons() {
 
             <ButtonGroup vertical className="transparent">
                 <Button className="transparent">
-                    <SocialIcon network="facebook" fgColor="white"/>
+                    <SocialIcon network="facebook" fgColor="white" />
                 </Button>
                 <Button className="transparent">
-                    <SocialIcon network="instagram" fgColor="white" bgColor="orange" />
+                    <SocialIcon network="instagram" fgColor="white" bgColor="black" />
                 </Button>
                 <Button className="transparent">
-                    <SocialIcon network="youtube" fgColor="white"/>
+                    <SocialIcon network="youtube" fgColor="white" />
                 </Button>
             </ButtonGroup>
 

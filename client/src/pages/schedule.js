@@ -12,11 +12,11 @@ function Schedule() {
         <>
             <NavItems index={5} />
             <Container>
-                <Row className="justify-content-center">
-                    <Col>
+                <Row className="justify-content-center justify-content-around">
+                    <Col xl={6}>
                         <SocialMedia />
                     </Col>
-                    <Col>
+                    <Col xl={6}>
                         <InlineWidget url="https://calendly.com/yourspacemaderight" />
                     </Col>
                 </Row>

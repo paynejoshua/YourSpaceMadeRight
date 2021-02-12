@@ -11,7 +11,7 @@ function Home() {
 
     return (
         <>
-            <div className="BGImage">
+            <div className="BGHome">
 
             <Jumbotron className="text-center">
                 <h1>Your Space Made Right</h1>
