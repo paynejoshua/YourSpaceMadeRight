@@ -13,8 +13,8 @@ function Home() {
         <>
             <div className="BGHome">
 
-            <Jumbotron className="text-center">
-                <h1>Your Space Made Right</h1>
+            <Jumbotron className="text-center homeJumbotron">
+                <h1 className="homePageTitle">Your Space Made Right</h1>
                 <NavItems index={0} />
             </Jumbotron>
             <Container >
@@ -25,9 +25,9 @@ function Home() {
                     <Col xs={12}  xl={3}>
                         <Card style={{width: '18rem'}}>
                             <Card.Body>
-                                <Card.Title>Services I offer</Card.Title>
+                                <Card.Title>Some text here</Card.Title>
                                     <Card.Text>
-                                        Here are some of the services that I currently offer
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </Card.Text>
                                 
                             </Card.Body>
@@ -36,9 +36,9 @@ function Home() {
                     <Col xs={12}  xl={3}>
                         <Card style={{width: '18rem'}}>
                             <Card.Body>
-                                <Card.Title>Services I offer</Card.Title>
+                                <Card.Title>Some text here</Card.Title>
                                     <Card.Text>
-                                        Here are some of the services that I currently offer
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </Card.Text>
                                 
                             </Card.Body>
@@ -47,9 +47,9 @@ function Home() {
                     <Col xs={12} xl={3}>
                         <Card style={{width: '18rem'}}>
                             <Card.Body>
-                                <Card.Title>Services I offer</Card.Title>
+                                <Card.Title>Some text here</Card.Title>
                                     <Card.Text>
-                                        Here are some of the services that I currently offer
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </Card.Text>
                                 
                             </Card.Body>

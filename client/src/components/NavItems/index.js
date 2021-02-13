@@ -8,7 +8,7 @@ function NavItems(props) {
     }
 
     return (
-        <Nav variant="pills">
+        <Nav variant="pills" >
             <Nav.Item>
                 <Nav.Link href="/home" className={getClassName(0)}>Home</Nav.Link>
             </Nav.Item>

@@ -37,6 +37,8 @@
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
 .CustomHeader{
   padding: 2rem 1rem;
     margin-bottom: 2rem;
@@ -55,4 +57,23 @@
 .transparent {
   background-color: transparent !important;
   border: none !important;
+}
+
+.homePageTitle {
+  font-family: 'Lobster Two', cursive !important;
+  font-size: 3rem;
+}
+
+.homeJumbotron {
+  background-color: snow !important;
+  
+}
+
+.nav-pills .nav-link.active {
+  background-color: coral !important;
+  color: white !important;
+}
+
+a {
+  color: coral !important;
 }
