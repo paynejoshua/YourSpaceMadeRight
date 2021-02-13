@@ -17,46 +17,7 @@ function Home() {
                 <h1 className="homePageTitle">Your Space Made Right</h1>
                 <NavItems index={0} />
             </Jumbotron>
-            <Container >
-                <Row className="justify-content-around justify-content-center">
-                    {/* <Col xs={12} xl={3}>
-                        <SocialMedia />
-                    </Col> */}
-                    <Col xs={12}  xl={3}>
-                        <Card style={{width: '18rem'}}>
-                            <Card.Body>
-                                <Card.Title>Some text here</Card.Title>
-                                    <Card.Text>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </Card.Text>
-                                
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col xs={12}  xl={3}>
-                        <Card style={{width: '18rem'}}>
-                            <Card.Body>
-                                <Card.Title>Some text here</Card.Title>
-                                    <Card.Text>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </Card.Text>
-                                
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col xs={12} xl={3}>
-                        <Card style={{width: '18rem'}}>
-                            <Card.Body>
-                                <Card.Title>Some text here</Card.Title>
-                                    <Card.Text>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </Card.Text>
-                                
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-            </Container>
+            
             <SocialMedia />
             </div>
 

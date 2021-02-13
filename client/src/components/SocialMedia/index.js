@@ -1,32 +1,76 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { SocialIcon } from "react-social-icons";
 import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup"
+import ButtonGroup from "react-bootstrap/ButtonGroup";
+import BlogIcon from "../../assets/blogIcon.png";
 
 
-function SocialButtons() {
+function SocialButtons(props) {
+    const [isVertical, setIsVertical] = useState(true)
+
+
+
+
+    useEffect(() => {
+        if (props.isVertical == false) {
+            setIsVertical(false)
+        }
+      
+    })
+
+
+
 
     return (
-        <>
+        <div>
+
+
             {/* For SocialIcon you can specifiy the url i.e url="https://www.facebook.com/bethany.hauck" 
             and this will automatically detect the social media icon and link to her profile
             
             otherwise you can do the following network="twitter" and it will just capture the icon*/}
 
-            <ButtonGroup vertical className="transparent">
-                <Button className="transparent">
-                    <SocialIcon network="facebook" fgColor="white" />
-                </Button>
-                <Button className="transparent">
-                    <SocialIcon network="instagram" fgColor="white" bgColor="black" />
-                </Button>
-                <Button className="transparent">
-                    <SocialIcon network="youtube" fgColor="white" />
-                </Button>
-            </ButtonGroup>
+
+            {
+                isVertical
+                    ? <ButtonGroup vertical className="transparent vertical">
+                        <Button className="transparent">
+                            <SocialIcon network="facebook" onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} fgColor="white" />
+                        </Button>
+                        <Button className="transparent">
+                            <SocialIcon network="instagram" fgColor="white" bgColor="black" />
+                        </Button>
+                        <Button className="transparent">
+                            <SocialIcon network="youtube" fgColor="white" />
+                        </Button>
+                        <Button className="transparent"> 
+                            <SocialIcon network="rss" fgColor="white" />
+                        </Button>
+                    </ButtonGroup>
 
 
-        </>
+                    : <ButtonGroup className="transparent vertical">
+                        <Button className="transparent">
+                            <SocialIcon network="facebook" onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} fgColor="white" />
+                        </Button>
+                        <Button className="transparent">
+                            <SocialIcon network="instagram" fgColor="white" bgColor="black" />
+                        </Button>
+                        <Button className="transparent">
+                            <SocialIcon network="youtube" fgColor="white" />
+                        </Button>
+                        <Button className="transparent"> 
+                            <SocialIcon network="rss" fgColor="white" />
+                        </Button>
+
+
+
+                    </ButtonGroup>
+
+
+
+            }
+        </div>
     )
 }
 

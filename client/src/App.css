@@ -46,6 +46,8 @@
     text-align: center;
 }
 
+/* Page Backgrounds */
+
 .BGHome {
   background-image: url("./assets/woodenWallpaper.jpg");
   background-repeat: no-repeat;
@@ -53,6 +55,40 @@
   background-position: center;
   height: 100vh;
 }
+
+.servicesBG {
+  background-image: url("./assets/closet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.scheduleBG {
+  background-image: url("./assets/desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.aboutMeBG {
+  background-image: url("./assets/headshot2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.blogBG {
+  background-image: url("./assets/travelPouches.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/*  */
 
 .transparent {
   background-color: transparent !important;
@@ -77,3 +113,29 @@
 a {
   color: coral !important;
 }
+
+.goLeft {
+  align-self: flex-start !important;
+}
+
+.profilePicBorder {
+  border-style: solid !important;
+  border-color: coral !important;
+}
+
+.noBorder {
+  border: none !important;
+}
+
+.blogBtn {
+  background-color: green !important;
+  border: green !important;
+  border-style: solid !important;
+  border-radius: 50% !important;
+  width: 50px;
+  height: 50px;
+  /* margin-left: 4%; */
+  margin-top: 2%;
+}
+
+

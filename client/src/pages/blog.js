@@ -4,26 +4,67 @@ import ProfilePic from "../assets/headshot1.jpg";
 import SocialMedia from "../components/SocialMedia";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col"
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import BlogIcon from "../assets/blogIcon.png";
+import Button from "react-bootstrap/Button"
 
 
 function Blog() {
 
     return (
         <>
+            <div className="blogBG">
             <NavItems index={2} />
 
-            <Container>
-                <Row>
-                    <Col>
-                        <SocialMedia />
-                    </Col>
+                <Container className="mt-5">
+                    <Row className="justify-content-around">
 
-                    <Col>    
-                        <img src={ProfilePic} style={{ width: "18rem" }} />
-                    </Col>
-                </Row>
-            </Container>
+                        <Col xs={12} xl={3}>
+                            <img className="profilePicBorder" src={ProfilePic} style={{ width: "18rem" }} />
+                            <SocialMedia isVertical={false} blog={true}></SocialMedia> 
+                            
+                        </Col>
+                        <Col>
+                            <Col xs={12} xl={9}>
+                                <Card>
+                                    <Card.Body>
+                                        <Card.Title>
+                                           My Recent Post:
+                                </Card.Title>
+                                        <Card.Text>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </Card.Text>
+
+                                    </Card.Body>
+                                </Card>
+
+                            </Col>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
 
         </>
     )

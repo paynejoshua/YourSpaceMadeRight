@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav"
+import NavBar from "react-bootstrap/Navbar"
 
 function NavItems(props) {
     
@@ -8,7 +9,8 @@ function NavItems(props) {
     }
 
     return (
-        <Nav variant="pills" >
+        <NavBar bg="light">
+            <Nav variant="pills" >
             <Nav.Item>
                 <Nav.Link href="/home" className={getClassName(0)}>Home</Nav.Link>
             </Nav.Item>
@@ -33,6 +35,8 @@ function NavItems(props) {
                 <Nav.Link href="/services" className={getClassName(6)}>Services</Nav.Link>
             </Nav.Item>
         </Nav>
+        </NavBar>
+        
     )
 }
 

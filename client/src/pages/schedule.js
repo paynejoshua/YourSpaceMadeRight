@@ -9,20 +9,19 @@ import { InlineWidget } from "react-calendly";
 function Schedule() {
 
     return (
-        <>
+        <div className="scheduleBG">
             <NavItems index={5} />
-            <Container>
+            <Container className="mt-5">
                 <Row className="justify-content-center justify-content-around">
-                    <Col xl={6}>
-                        <SocialMedia />
-                    </Col>
+                    <SocialMedia isVertical={true} />
                     <Col xl={6}>
                         <InlineWidget url="https://calendly.com/yourspacemaderight" />
                     </Col>
                 </Row>
             </Container>
+            
 
-        </>
+        </div>
     )
 }
 
