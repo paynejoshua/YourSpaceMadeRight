@@ -9,7 +9,7 @@ import { InlineWidget } from "react-calendly";
 function Schedule() {
 
     return (
-        <div className="scheduleBG">
+        <div className="mainBG">
             <NavItems index={5} />
             <Container className="mt-5">
                 <Row className="justify-content-center justify-content-around">
@@ -19,9 +19,7 @@ function Schedule() {
                     </Col>
                 </Row>
             </Container>
-            
-
-        </div>
+     </div>
     )
 }
 

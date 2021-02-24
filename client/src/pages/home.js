@@ -10,8 +10,8 @@ import Card from "react-bootstrap/Card";
 function Home() {
 
     return (
-        <>
-            <div className="BGHome">
+        
+        <div className="mainBG">
 
             <Jumbotron className="text-center homeJumbotron">
                 <h1 className="homePageTitle">Your Space Made Right</h1>
@@ -21,7 +21,7 @@ function Home() {
             <SocialMedia />
             </div>
 
-        </>
+      
     )
 }
 

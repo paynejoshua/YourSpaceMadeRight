@@ -9,8 +9,7 @@ import SocialMedia from "../components/SocialMedia"
 function Services() {
 
     return (
-        <div className="servicesBG">
-
+        <div className="mainBG">
             <NavItems index={6} />
             <Container className="mt-5">
                 <Row className="justify-content-between">
@@ -55,7 +54,6 @@ function Services() {
                 </Row>
             </Container>
             <SocialMedia isVertical={true} />
-
         </div>
     )
 }

@@ -11,13 +11,14 @@ import Card from "react-bootstrap/Card"
 function About() {
 
     return (
-        <>
+     
+        <div className="secondaryBG">
             <NavItems index={1} />
 
             <Container className="mt-5">
                 <Row>
                     <Col xs={12} xl={6}>
-                        <Image className="profilePicBorder" src={ProfilePic2} fluid />
+                        <Image fluid className="profilePicBorder" src={ProfilePic2} fluid />
 
                     </Col>
                     <Col xs={12} xl={6}>
@@ -55,8 +56,8 @@ function About() {
                 </Row>
             </Container>
 
-
-        </>
+            </div>
+   
     )
 }
 

@@ -13,8 +13,7 @@ import Button from "react-bootstrap/Button"
 function Blog() {
 
     return (
-        <>
-            <div className="blogBG">
+        <div className="secondaryBG">
             <NavItems index={2} />
 
                 <Container className="mt-5">
@@ -64,9 +63,8 @@ function Blog() {
                         </Col>
                     </Row>
                 </Container>
-            </div>
 
-        </>
+        </div>
     )
 }
 
