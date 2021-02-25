@@ -26,12 +26,12 @@ function Blog() {
                         </Col>
                         <Col>
                             <Col xs={12} xl={9}>
-                                <Card>
+                                <Card className="profilePicBorder">
                                     <Card.Body>
-                                        <Card.Title>
+                                        <Card.Title className="blogFont">
                                            My Recent Post:
                                 </Card.Title>
-                                        <Card.Text>
+                                        <Card.Text className="blogFont">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,

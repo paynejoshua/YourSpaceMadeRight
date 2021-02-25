@@ -78,11 +78,12 @@
 
 .homePageTitle {
   font-family: 'Sacramento', cursive !important;
-  font-size: 3rem;
+  font-size: 5rem;
+  color: #7E9A7F;
 }
 
 .homeJumbotron {
-  background-color: snow !important;
+  background-color: transparent !important;
   
 }
 
@@ -96,6 +97,10 @@
   /* font-family: 'Frank Ruhl Libre', serif !important; */
 }
 
+.blogFont {
+  font-family: 'Frank Ruhl Libre', serif !important;
+}
+
 a {
   color: #958DE2 !important;
 }
@@ -104,9 +109,22 @@ a {
   align-self: flex-start !important;
 }
 
+.customBtn {
+  background-color: #958DE2 !important;
+  border: none !important;
+  font-family: 'Frank Ruhl Libre', serif !important;
+
+}
+
+.websiteFont {
+  font-family: 'Frank Ruhl Libre', serif !important;
+}
+
 .profilePicBorder {
   border-style: solid !important;
-  border-color: #958DE2 !important;
+  border-color: #7E9A7F !important;
+  border-width: .25rem !important;
+  border-radius: 5% !important;
 }
 
 .noBorder {

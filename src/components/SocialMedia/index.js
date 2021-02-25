@@ -35,33 +35,34 @@ function SocialButtons(props) {
                 isVertical
                     ? <ButtonGroup vertical className="transparent vertical">
                         <Button className="transparent">
-                            <SocialIcon network="facebook" onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} fgColor="white" />
-                        </Button>
-                        <Button className="transparent">
-                            <SocialIcon network="instagram" fgColor="white" bgColor="black" />
-                        </Button>
-                        <Button className="transparent">
-                            <SocialIcon network="youtube" fgColor="white" />
+                            <SocialIcon network="facebook" onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} fgColor="white" bgColor="#958DE2" />
                         </Button>
                         <Button className="transparent"> 
-                            <SocialIcon network="rss" fgColor="white" />
+                            <SocialIcon network="pinterest" fgColor="white" bgColor="#958DE2" />
+                        </Button>
+                        <Button className="transparent">
+                            <SocialIcon network="instagram" fgColor="white" bgColor="#958DE2" />
+                        </Button>
+                        <Button className="transparent">
+                            <SocialIcon network="youtube" fgColor="white" bgColor="#958DE2" />
                         </Button>
                     </ButtonGroup>
 
 
                     : <ButtonGroup className="transparent vertical">
                         <Button className="transparent">
-                            <SocialIcon network="facebook" onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} fgColor="white" />
-                        </Button>
-                        <Button className="transparent">
-                            <SocialIcon network="instagram" fgColor="white" bgColor="black" />
-                        </Button>
-                        <Button className="transparent">
-                            <SocialIcon network="youtube" fgColor="white" />
+                            <SocialIcon network="facebook" onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} fgColor="white" bgColor="#958DE2" />
                         </Button>
                         <Button className="transparent"> 
-                            <SocialIcon network="rss" fgColor="white" />
+                            <SocialIcon network="pinterest" fgColor="white" bgColor="#958DE2" />
                         </Button>
+                        <Button className="transparent">
+                            <SocialIcon network="instagram" fgColor="white" bgColor="#958DE2" />
+                        </Button>
+                        <Button className="transparent">
+                            <SocialIcon network="youtube" fgColor="white" bgColor="#958DE2" />
+                        </Button>
+                        
 
 
 
