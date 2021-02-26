@@ -1,13 +1,13 @@
 import React from "react";
 import NavItems from "../components/NavItems";
 import ProfilePic from "../assets/headshot1.jpg";
-import SocialMedia from "../components/SocialMedia";
+// import SocialMedia from "../components/SocialMedia";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import BlogIcon from "../assets/blogIcon.png";
-import Button from "react-bootstrap/Button"
+// import BlogIcon from "../assets/blogIcon.png";
+// import Button from "react-bootstrap/Button"
 
 
 function Blog() {
@@ -20,8 +20,8 @@ function Blog() {
                     <Row className="justify-content-around">
 
                         <Col xs={12} xl={3}>
-                            <img className="profilePicBorder" src={ProfilePic} style={{ width: "18rem" }} />
-                            <SocialMedia isVertical={false} blog={true}></SocialMedia> 
+                            <img className="profilePicBorder" alt="Bethany" src={ProfilePic} style={{ width: "18rem" }} />
+                            {/* <SocialMedia isVertical={false} blog={true}></SocialMedia>  */}
                             
                         </Col>
                         <Col>

@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import SocialMedia from "../components/SocialMedia"
+// import SocialMedia from "../components/SocialMedia"
 
 function Services() {
 
@@ -53,7 +53,7 @@ function Services() {
                     </Col>
                 </Row>
             </Container>
-            <SocialMedia isVertical={true} />
+            {/* <SocialMedia isVertical={true} /> */}
         </div>
     )
 }
