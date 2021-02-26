@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { SocialIcon } from "react-social-icons";
+import SocialIcon from "react-social-icons";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import BlogIcon from "../../assets/blogIcon.png";
