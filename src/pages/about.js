@@ -15,7 +15,7 @@ function About() {
         <div className="secondaryBG">
             <NavItems index={1} />
 
-            <Container className="mt-5">
+            <Container className="mt-5 scroll">
                 <Row>
                     <Col xs={12} xl={6}>
                         <Image fluid className="profilePicBorder" src={ProfilePic2} fluid />

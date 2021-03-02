@@ -10,9 +10,10 @@ function Applause() {
     return (
         <div className="mainBG">
             <NavItems index={3} />
-            <Container>
+            <Container fluid className="scroll">
 
-            <Row sm={12} lg={4}>
+            <Row sm={12} md={{span: 6, offset: 3}}>
+            
                 <Col style={{margin: "1rem"}}>
                     <Card style={{width: "18rem"}} className="profilePicBorder">
                         <Card.Body>

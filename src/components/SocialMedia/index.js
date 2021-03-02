@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from "react";
-// import SocialIcon from "react-social-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
-// import BlogIcon from "../../assets/blogIcon.png";
+// import Col from "react-bootstrap/Col";
+import {
+    faFacebook,
+    faInstagram,
+    faPinterest,
+    faYoutube
+} from "@fortawesome/free-brands-svg-icons";
 
 
 function SocialButtons(props) {
@@ -33,40 +39,41 @@ function SocialButtons(props) {
 
             {
                 isVertical
-                    ? <ButtonGroup vertical className="transparent vertical">
-                        <Button className="transparent">
-                            <SocialIcon network="facebook" onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} fgColor="white" bgColor="#958DE2" />
+                    ? <ButtonGroup vertical className="vertical">
+                        <Button className="transparent btnBGV">
+                            <FontAwesomeIcon className="facebook" size="2x" icon={faFacebook} onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} />
                         </Button>
-                        <Button className="transparent"> 
-                            <SocialIcon network="pinterest" fgColor="white" bgColor="#958DE2" />
+                        <Button className="transparent btnBGV"> 
+                            <FontAwesomeIcon className="pinterest" size="2x"  icon={faPinterest} />
                         </Button>
-                        <Button className="transparent">
-                            <SocialIcon network="instagram" fgColor="white" bgColor="#958DE2" />
+                        <Button className="transparent btnBGV">
+                            <FontAwesomeIcon className="instagram" size="2x"  icon={faInstagram} />
                         </Button>
-                        <Button className="transparent">
-                            <SocialIcon network="youtube" fgColor="white" bgColor="#958DE2" />
+                        <Button className="transparent btnBGV">
+                            <FontAwesomeIcon className="youtube" size="2x"  icon={faYoutube} />
                         </Button>
                     </ButtonGroup>
 
 
-                    : <ButtonGroup className="transparent vertical">
-                        <Button className="transparent">
-                            <SocialIcon network="facebook" onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} fgColor="white" bgColor="#958DE2" />
+                    : <ButtonGroup>
+                   <Button className="transparent btnBGH">
+                            <FontAwesomeIcon className="facebook" size="2x" icon={faFacebook} onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} />
                         </Button>
-                        <Button className="transparent"> 
-                            <SocialIcon network="pinterest" fgColor="white" bgColor="#958DE2" />
+                        <Button className="transparent btnBGH"> 
+                            <FontAwesomeIcon className="pinterest" size="2x"  icon={faPinterest} />
                         </Button>
-                        <Button className="transparent">
-                            <SocialIcon network="instagram" fgColor="white" bgColor="#958DE2" />
+                        <Button className="transparent btnBGH">
+                            <FontAwesomeIcon className="instagram" size="2x"  icon={faInstagram} />
                         </Button>
-                        <Button className="transparent">
-                            <SocialIcon network="youtube" fgColor="white" bgColor="#958DE2" />
+                        <Button className="transparent btnBGH">
+                            <FontAwesomeIcon className="youtube" size="2x"  icon={faYoutube} />
                         </Button>
+                </ButtonGroup>
                         
 
 
 
-                    </ButtonGroup>
+        
 
 
 

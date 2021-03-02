@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-// import SocialMedia from "../components/SocialMedia"
+import SocialMedia from "../components/SocialMedia"
 
 function Services() {
 
@@ -13,9 +13,6 @@ function Services() {
             <NavItems index={6} />
             <Container className="mt-5">
                 <Row className="justify-content-between">
-
-
-
 
 
                     <Col xs={12} xl={2} className="mt-5">
@@ -53,7 +50,7 @@ function Services() {
                     </Col>
                 </Row>
             </Container>
-            {/* <SocialMedia isVertical={true} /> */}
+            <SocialMedia isVertical={true} />
         </div>
     )
 }

@@ -10,7 +10,7 @@ function Contact() {
     return (
         <div className="mainBG">
             <NavItems index={4} />
-            <Container>
+            <Container className="scroll">
                 <Form className="websiteFont">
                     <Form.Group controlId="exampleForm.ControlInput1">
                         <Form.Label>Name:</Form.Label>
