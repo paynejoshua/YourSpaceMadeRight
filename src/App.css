@@ -91,6 +91,12 @@
   border: none !important;
 }
 
+/* Home Page */
+
+.jumbotron {
+  margin-bottom: 0rem !important; 
+}
+
 .homePageTitle {
   font-family: 'Sacramento', cursive !important;
   font-size: 5rem;
@@ -109,7 +115,6 @@
 .nav-pills .nav-link.active {
   background-color: #958DE2 !important;
   color: white !important;
-  /* font-family: 'Frank Ruhl Libre', serif !important; */
 }
 
 .blogFont {
@@ -136,14 +141,16 @@ a {
 }
 
 .btnBGV:hover {
-  transform: translateX(5px);
+  transform: translateX(7px);
+  transition: .5s;
 }
 .btnBGH {
   background-color: #958DE2 !important
 }
 
 .btnBGH:hover {
-  transform: translateY(5px);
+  transform: translateY(7px);
+  transition: .5s;
 }
 
 .websiteFont {
@@ -196,6 +203,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 .youtube {
   color: #c4302b;
   
+}
+
+/* Media Queries */
+
+/* mobile */
+
+
+@media only screen and (max-width: 425px) {
+  .homePageTitle {
+    font-size: 2rem;
+  }
+
+
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+  .homePageTitle {
+    font-size: 3rem;
+  }
 }
 
 
