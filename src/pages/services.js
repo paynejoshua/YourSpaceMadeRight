@@ -4,7 +4,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import SocialMedia from "../components/SocialMedia"
+import SocialMedia from "../components/SocialMedia";
+import ServiceOptions from "../components/ServiceOptions";
 
 function Services() {
 
@@ -14,40 +15,22 @@ function Services() {
             <Container className="mt-5">
                 <Row className="justify-content-between">
 
-
-                    <Col xs={12} xl={2} className="mt-5">
+                    {ServiceOptions.map(item =>(
+                        <Col xs={12} md={6} lg={6} xl={2} className="mt-5" key={item.title}>
                         <Card style={{ width: '18rem' }}>
                             <Card.Body>
-                                <Card.Title>Some text here</Card.Title>
-                                <Card.Text>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </Card.Text>
+                                <Card.Title>{item.title}</Card.Title>
+                                <Card.Text>                                    
+                                    {item.description}
+                                </Card.Text>
 
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col xs={12} xl={2} className="mt-5">
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Body>
-                                <Card.Title>Some text here</Card.Title>
-                                <Card.Text>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </Card.Text>
+                    ))}
 
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col xs={12} xl={2} className="mt-5">
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Body>
-                                <Card.Title>Some text here</Card.Title>
-                                <Card.Text>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </Card.Text>
-
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                    
+                    
                 </Row>
             </Container>
             <SocialMedia isVertical={true} />
