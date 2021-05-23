@@ -7,19 +7,34 @@ import Dropdown from "react-bootstrap/Dropdown"
 function NavItems(props) {
 
     const [showBars, setShowBars] = useState(false)
+    const [windowWidth, setwindowWidth] = useState(window.innerWidth)
+
+    const handleResize = () => {
+        setwindowWidth(window.innerWidth)
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize)
+
+
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [])
 
     function getClassName(index) {
         return index === props.index ? "active" : ""
     }
 
+
     return (
 
        <>
-                {showBars
+                {windowWidth <= 768
                     ? 
                         <Dropdown>
                             <Dropdown.Toggle variant="black" className="transparent" id="dropdown-basic">
-                            <FaBars size="3rem" />
+                            <FaBars size="2rem" />
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
@@ -27,7 +42,7 @@ function NavItems(props) {
                                 <Dropdown.Item href="/about" className={getClassName(1)}>About Me</Dropdown.Item>
                                 <Dropdown.Item href="/blog" className={getClassName(2)}>Blog</Dropdown.Item>
                                 <Dropdown.Item href="/applause" className={getClassName(3)}>Applause</Dropdown.Item>
-                                <Dropdown.Item href="/contact" className={getClassName(4)}>Contact</Dropdown.Item>
+                                <Dropdown.Item href="/contact" className={getClassName(4)}>Inquiry</Dropdown.Item>
                                 <Dropdown.Item href="/schedule" className={getClassName(5)}>Schedule</Dropdown.Item>
                                 <Dropdown.Item href="/services" className={getClassName(6)}>Services</Dropdown.Item>
                             </Dropdown.Menu>
@@ -50,7 +65,7 @@ function NavItems(props) {
                             <Nav.Link href="/applause" className={getClassName(3)}>Applause</Nav.Link>
                         </Nav.Item>
                         <Nav.Item style={{ margin: ".5rem" }}>
-                            <Nav.Link href="/contact" className={getClassName(4)}>Contact</Nav.Link>
+                            <Nav.Link href="/contact" className={getClassName(4)}>Inquiry</Nav.Link>
                         </Nav.Item>
                         <Nav.Item style={{ margin: ".5rem" }}>
                             <Nav.Link

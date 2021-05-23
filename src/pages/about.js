@@ -18,14 +18,14 @@ function About() {
             <Container className="mt-5 scroll">
                 <Row>
                     <Col xs={12} xl={6}>
-                        <Image fluid className="profilePicBorder" src={ProfilePic2} fluid />
+                        <Image fluid className="profilePicBorder" src={ProfilePic2} />
 
                     </Col>
                     <Col xs={12} xl={6}>
                         <Card>
                             <Card.Body>
                                 <Card.Title>
-                                    Bethany Hauk:
+                                    Bethany Hauck:
                                 </Card.Title>
                                 <Card.Text>
                                 Born and raised in Washington state with a real love for the outdoors. I find pleasure in experiencing adventures in nature, as well as cultivating spaces to embrace community and meaning indoors. In my spare time, I enjoy cooking, rock climbing, and biking around Seattle.

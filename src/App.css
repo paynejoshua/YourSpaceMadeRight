@@ -113,6 +113,7 @@
 }
 
 .nav-pills .nav-link.active {
+  /* background-color: rgb(108, 97, 209) !important; */
   background-color: #958DE2 !important;
   color: white !important;
 }
@@ -122,6 +123,7 @@
 }
 
 a {
+  /* color: rgb(108, 97, 209) !important; */
   color: #958DE2 !important;
 }
 
@@ -130,14 +132,16 @@ a {
 }
 
 .customBtn {
-  background-color: #958DE2 !important;
+  background-color: rgb(108, 97, 209) !important;
+  /* background-color: #958DE2 !important; */
   border: none !important;
   font-family: 'Frank Ruhl Libre', serif !important;
 
 }
 
 .btnBGV {
-  background-color: #958DE2 !important
+  background-color: rgb(108, 97, 209) !important;
+  /* background-color: #958DE2 !important */
 }
 
 .btnBGV:hover {
@@ -145,7 +149,8 @@ a {
   transition: .5s;
 }
 .btnBGH {
-  background-color: #958DE2 !important
+  background-color: rgb(108, 97, 209) !important;
+  /* background-color: #958DE2 !important */
 }
 
 .btnBGH:hover {
