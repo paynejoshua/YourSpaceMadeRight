@@ -13,7 +13,7 @@ function Schedule() {
             <NavItems index={6} />
             <Container className="mt-5">
                 <Row>
-                    <Col lg={6}>
+                    <Col lg={3}>
                     <SocialMedia isVertical={true} />
                     </Col>
                     <Col lg={6}>

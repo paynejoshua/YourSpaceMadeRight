@@ -18,7 +18,14 @@ function Contact() {
             <Container className="scroll d-flex justify-content-center">
                
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9TC0hXeMKSfdgqmFKq2AZm0HuPuASUKUiwSezUw8cI4IluA/viewform?embedded=true" width="640" height="670" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <iframe 
+                    title="Contact Form" 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSd9TC0hXeMKSfdgqmFKq2AZm0HuPuASUKUiwSezUw8cI4IluA/viewform?embedded=true" 
+                    width="640" 
+                    height="670" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0">Loading…</iframe>
 
             </Container>
 

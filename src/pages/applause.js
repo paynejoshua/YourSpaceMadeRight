@@ -15,7 +15,7 @@ function Applause() {
             <Row sm={12} md={{span: 6, offset: 3}}>
             
                 <Col style={{margin: "1rem"}}>
-                    <Card style={{width: "18rem"}} className="profilePicBorder">
+                    <Card style={{width: "18rem"}} className="profilePicBorder dropShadow">
                         <Card.Body>
                             <Card.Title>
                                 "Bethany was amazing""

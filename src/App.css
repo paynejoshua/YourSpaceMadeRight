@@ -205,6 +205,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   
 }
 
+/* Applause Shadow Effect */
+
+.dropShadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
 /* Media Queries */
 
 /* mobile */
