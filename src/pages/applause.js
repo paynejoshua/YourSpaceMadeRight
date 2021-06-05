@@ -13,10 +13,10 @@ function Applause() {
             <NavItems index={4} />
             <Container fluid className="scroll">
 
-            <Row className="d-flex justify-content-center ">
+            <Row>
             
                             {Reviews.map(item =>(
-                <Col sm={12} md={{span: 4, offset: 2}} lg={3} style={{margin: "1rem"}}>
+                <Col sm={12} md={4} lg={{span: 3, offset: 2}} xl={{span: 3, offset: 1}} xxl={{span: 3, offset: 1}} className="mt-4">
                     <Card style={{width: "18rem"}} className="profilePicBorder dropShadow">
                                 <Card.Body key={item.title}>
 
