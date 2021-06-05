@@ -18,11 +18,11 @@ function About() {
             <Container className="mt-5 scroll">
                 <Row>
                     <Col xs={6} xl={6}>
-                        <Image fluid className="profilePicBorder" src={ProfilePic2} />
+                        <Image fluid className="profilePicBorder dropShadow" src={ProfilePic2} />
 
                     </Col>
                     <Col xs={6} xl={6}>
-                        <Card>
+                        <Card className="dropShadow">
                             <Card.Body>
                                 <Card.Title>
                                     Bethany Hauck:

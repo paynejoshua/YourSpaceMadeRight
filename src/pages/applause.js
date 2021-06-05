@@ -15,27 +15,27 @@ function Applause() {
 
             <Row>
             
-                            {Reviews.map(item =>(
-                <Col sm={12} md={4} lg={{span: 3, offset: 2}} xl={{span: 3, offset: 1}} xxl={{span: 3, offset: 1}} className="mt-4">
-                    <Card style={{width: "18rem"}} className="profilePicBorder dropShadow">
-                                <Card.Body key={item.title}>
+                {Reviews.map(item =>(
+                    <Col sm={12} md={4} lg={{span: 3, offset: 2}} xl={{span: 3, offset: 1}} xxl={{span: 3, offset: 1}} className="mt-4">
+                        <Card style={{width: "18rem"}} className="profilePicBorder dropShadow">
+                            <Card.Body key={item.title}>
 
+                                <Card.Title>
+                                    {item.title}
+                                </Card.Title>
+                                
+                                <Card.Text>
+                                    {item.body}
+                                </Card.Text>
 
+                            </Card.Body>
+                                        
+                            <Card.Footer>-{item.reviewer}</Card.Footer>
+                        
+                        </Card>
 
-                            <Card.Title>
-                                {item.title}
-                        </Card.Title>
-                            <Card.Text>
-                                {item.body}
-                        </Card.Text>
-                        </Card.Body>
-                                    
-                        <Card.Footer>-{item.reviewer}</Card.Footer>
-                       
-                    </Card>
-
-                </Col>
-                                    ))}
+                    </Col>
+                ))}
                 
             </Row>
             </Container>

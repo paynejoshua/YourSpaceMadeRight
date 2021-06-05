@@ -16,9 +16,11 @@ function Schedule() {
                     <Col lg={3}>
                     <SocialMedia isVertical={true} />
                     </Col>
-                    <Col lg={6}>
-                       
-                        <InlineWidget url="https://calendly.com/yourspacemaderight"/>
+                    <Col lg={6} >
+                            <InlineWidget url="https://calendly.com/yourspacemaderight" />
+                     
+
+                      
                        
                     </Col>
                 </Row>

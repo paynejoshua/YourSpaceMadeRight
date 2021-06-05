@@ -17,7 +17,7 @@ function Services() {
 
                     {ServiceOptions.map(item =>(
                         <Col xs={12} md={6} lg={6} xl={2} className="mt-5" key={item.title}>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{ width: '18rem' }} className="dropShadow">
                             <Card.Body>
                                 <Card.Title>{item.title}</Card.Title>
                                 <Card.Text>                                    

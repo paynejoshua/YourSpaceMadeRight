@@ -20,13 +20,13 @@ function Blog() {
                     <Row className="justify-content-around">
 
                         <Col xs={12} xl={{span: 3, offset: 1}}>
-                            <img className="profilePicBorder" alt="Bethany" src={ProfilePic} style={{ width: "18rem" }} />
+                            <img className="profilePicBorder dropShadow" alt="Bethany" src={ProfilePic} style={{ width: "18rem" }} />
                             <SocialMedia isVertical={false} blog={true}></SocialMedia> 
                             
                         </Col>
                         <Col>
                             <Col xs={12} xl={9}>
-                                <Card className="profilePicBorder">
+                                <Card className="profilePicBorder dropShadow">
                                     <Card.Body>
                                         <Card.Title className="blogFont">
                                            My Recent Post:
