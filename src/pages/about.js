@@ -17,11 +17,11 @@ function About() {
 
             <Container className="mt-5 scroll">
                 <Row>
-                    <Col xs={12} xl={6}>
+                    <Col xs={6} xl={6}>
                         <Image fluid className="profilePicBorder" src={ProfilePic2} />
 
                     </Col>
-                    <Col xs={12} xl={6}>
+                    <Col xs={6} xl={6}>
                         <Card>
                             <Card.Body>
                                 <Card.Title>

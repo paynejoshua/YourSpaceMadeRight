@@ -36,40 +36,40 @@ function SocialButtons(props) {
             
             otherwise you can do the following network="twitter" and it will just capture the icon*/}
 
-
+            
             {
                 isVertical
                     ? <ButtonGroup vertical className="vertical">
+                        <Button className="btnBGV">
+                            <FontAwesomeIcon className="facebook" style={{color: "white"}} size="2x" icon={faFacebook} onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} />
+                        </Button>
+                        {/* <Button className="transparent btnBGV"> 
+                            <FontAwesomeIcon className="pinterest" style={{color: "white"}} size="2x"  icon={faPinterest} />
+                        </Button> */}
                         <Button className="transparent btnBGV">
-                            <FontAwesomeIcon className="facebook" size="2x" icon={faFacebook} onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} />
+                            <FontAwesomeIcon size="2x" style={{color: "white"}}  icon={faInstagram} />
                         </Button>
-                        <Button className="transparent btnBGV"> 
-                            <FontAwesomeIcon className="pinterest" size="2x"  icon={faPinterest} />
-                        </Button>
-                        <Button className="transparent btnBGV">
-                            <FontAwesomeIcon className="instagram" size="2x"  icon={faInstagram} />
-                        </Button>
-                        <Button className="transparent btnBGV">
-                            <FontAwesomeIcon className="youtube" size="2x"  icon={faYoutube} />
-                        </Button>
+                        {/* <Button className="transparent btnBGV">
+                            <FontAwesomeIcon className="youtube" style={{color: "white"}} size="2x"  icon={faYoutube} />
+                        </Button> */}
                     </ButtonGroup>
 
 
-                    : <ButtonGroup>
-                   <Button className="transparent btnBGH">
-                            <FontAwesomeIcon className="facebook" size="2x" icon={faFacebook} onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} />
-                        </Button>
-                        <Button className="transparent btnBGH"> 
-                            <FontAwesomeIcon className="pinterest" size="2x"  icon={faPinterest} />
-                        </Button>
-                        <Button className="transparent btnBGH">
-                            <FontAwesomeIcon className="instagram" size="2x"  icon={faInstagram} />
-                        </Button>
-                        <Button className="transparent btnBGH">
-                            <FontAwesomeIcon className="youtube" size="2x"  icon={faYoutube} />
-                        </Button>
-                </ButtonGroup>
-                        
+                    
+                        : <ButtonGroup>
+                            <Button className="transparent btnBGH">
+                                <FontAwesomeIcon className="facebook" style={{color: "white"}} size="2x" icon={faFacebook} onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} />
+                            </Button>
+                            <Button className="transparent btnBGH"> 
+                                <FontAwesomeIcon className="pinterest" style={{color: "white"}} size="2x"  icon={faPinterest} />
+                            </Button>
+                            <Button className="transparent btnBGH">
+                                <FontAwesomeIcon style={{color: "white"}} size="2x"  icon={faInstagram} />
+                            </Button>
+                            <Button className="transparent btnBGH">
+                                <FontAwesomeIcon className="youtube" style={{color: "white"}} size="2x"  icon={faYoutube} />
+                            </Button>
+                        </ButtonGroup>
 
 
 
@@ -83,3 +83,5 @@ function SocialButtons(props) {
 }
 
 export default SocialButtons
+
+

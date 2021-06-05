@@ -9,7 +9,7 @@ import { InlineWidget } from "react-calendly";
 function Schedule() {
 
     return (
-        <div className="mainBG">
+        <div className="secondaryBG">
             <NavItems index={6} />
             <Container className="mt-5">
                 <Row>

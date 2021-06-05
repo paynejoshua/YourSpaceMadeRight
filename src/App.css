@@ -117,6 +117,11 @@
   color: white !important;
 }
 
+.dropdown-item.active{
+  background-color: #7E9A7F !important;
+  color: white !important
+}
+
 .blogFont {
   font-family: 'Frank Ruhl Libre', serif !important;
 }
@@ -210,6 +215,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 .dropShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
+
 
 /* Media Queries */
 

@@ -5,12 +5,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import SocialMedia from "../components/SocialMedia";
-import ServiceOptions from "../components/ServiceOptions";
+import ServiceOptions from "../utils/ServiceOptions";
 
 function Services() {
 
     return (
-        <div className="mainBG">
+        <div className="secondaryBG">
             <NavItems index={2} />
             <Container className="mt-5">
                 <Row className="justify-content-between">

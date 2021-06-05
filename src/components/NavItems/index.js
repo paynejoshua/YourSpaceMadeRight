@@ -6,7 +6,6 @@ import Dropdown from "react-bootstrap/Dropdown"
 
 function NavItems(props) {
 
-    const [showBars, setShowBars] = useState(false)
     const [windowWidth, setwindowWidth] = useState(window.innerWidth)
 
     const handleResize = () => {
@@ -33,12 +32,12 @@ function NavItems(props) {
                 {windowWidth <= 768
                     ? 
                         <Dropdown>
-                            <Dropdown.Toggle variant="black" className="transparent" id="dropdown-basic">
+                            <Dropdown.Toggle style={{color: "rgb(108, 97, 209)"}} className="transparent" id="dropdown-basic">
                             <FaBars size="2rem" />
                             </Dropdown.Toggle>
 
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="/home" className={getClassName(0)}>Home</Dropdown.Item>
+                            <Dropdown.Menu style={{backgroundColor: "white"}}>
+                                <Dropdown.Item href="/home"  className={getClassName(0)}>Home</Dropdown.Item>
                                 <Dropdown.Item href="/about" className={getClassName(1)}>About Me</Dropdown.Item>
                                 <Dropdown.Item href="/services" className={getClassName(2)}>Services</Dropdown.Item>
                                 <Dropdown.Item href="/blog" className={getClassName(3)}>Blog</Dropdown.Item>

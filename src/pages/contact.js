@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
+import Logo from "../assets/YSMR Logo.png"
 
 
 
@@ -13,13 +14,12 @@ function Contact() {
    
 
     return (
-        <div className="mainBG">
+        <div className="secondaryBG">
             <NavItems index={5} />
             <Container className="scroll d-flex justify-content-center">
-               
 
                 <iframe 
-                    title="Contact Form" 
+                    title="Contact Form"
                     src="https://docs.google.com/forms/d/e/1FAIpQLSd9TC0hXeMKSfdgqmFKq2AZm0HuPuASUKUiwSezUw8cI4IluA/viewform?embedded=true" 
                     width="640" 
                     height="670" 
