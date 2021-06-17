@@ -1,11 +1,12 @@
 import React from "react";
 import NavItems from "../components/NavItems";
-import ProfilePic2 from "../assets/headshot2.jpg";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card"
+import Card from "react-bootstrap/Card";
+import PlantLattice from "../assets/PlantLattice.JPG"
+import SocialMedia from "../components/SocialMedia"
 
 
 function About() {
@@ -17,11 +18,11 @@ function About() {
 
             <Container className="mt-5 scroll">
                 <Row>
-                    <Col xs={6} xl={6}>
-                        <Image fluid className="profilePicBorder dropShadow" src={ProfilePic2} />
+                    <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
+                        <Image fluid className="profilePicBorder dropShadow" src={PlantLattice} />
 
                     </Col>
-                    <Col xs={6} xl={6}>
+                    <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
                         <Card className="dropShadow">
                             <Card.Body>
                                 <Card.Title>
@@ -40,6 +41,8 @@ function About() {
 
                             </Card.Body>
                         </Card>
+                        
+                        <SocialMedia isVertical={false} />
 
                     </Col>
                 </Row>

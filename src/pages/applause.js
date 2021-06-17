@@ -4,20 +4,23 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container";
-import Reviews from "../utils/Reviews"
+import Reviews from "../utils/Reviews";
+import SocialMedia from "../components/SocialMedia";
 
 function Applause() {
 
     return (
         <div className="secondaryBG">
             <NavItems index={4} />
+            <SocialMedia />
             <Container fluid className="scroll">
 
-            <Row>
+            <Row >
+                
             
                 {Reviews.map(item =>(
-                    <Col sm={12} md={4} lg={{span: 3, offset: 2}} xl={{span: 3, offset: 1}} xxl={{span: 3, offset: 1}} className="mt-4">
-                        <Card style={{width: "18rem"}} className="profilePicBorder dropShadow">
+                    <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}  className="mt-4">
+                        <Card style={{width: "30rem"}} className="profilePicBorder dropShadow">
                             <Card.Body key={item.title}>
 
                                 <Card.Title>

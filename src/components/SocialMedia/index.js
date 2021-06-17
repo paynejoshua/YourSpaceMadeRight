@@ -39,7 +39,7 @@ function SocialButtons(props) {
             
             {
                 isVertical
-                    ? <ButtonGroup vertical className="vertical">
+                    ? <ButtonGroup vertical className="vertical" >
                         <Button className="btnBGV">
                             <FontAwesomeIcon className="facebook" style={{color: "white"}} size="2x" icon={faFacebook} onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} />
                         </Button>
@@ -60,15 +60,15 @@ function SocialButtons(props) {
                             <Button className="transparent btnBGH">
                                 <FontAwesomeIcon className="facebook" style={{color: "white"}} size="2x" icon={faFacebook} onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} />
                             </Button>
-                            <Button className="transparent btnBGH"> 
+                            {/* <Button className="transparent btnBGH"> 
                                 <FontAwesomeIcon className="pinterest" style={{color: "white"}} size="2x"  icon={faPinterest} />
-                            </Button>
+                            </Button> */}
                             <Button className="transparent btnBGH">
                                 <FontAwesomeIcon style={{color: "white"}} size="2x"  icon={faInstagram} />
                             </Button>
-                            <Button className="transparent btnBGH">
+                            {/* <Button className="transparent btnBGH">
                                 <FontAwesomeIcon className="youtube" style={{color: "white"}} size="2x"  icon={faYoutube} />
-                            </Button>
+                            </Button> */}
                         </ButtonGroup>
 
 
