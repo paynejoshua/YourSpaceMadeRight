@@ -1,7 +1,8 @@
 import React from "react";
 import NavItems from "../components/NavItems";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import SocialMedia from "../components/SocialMedia"
+import SocialMedia from "../components/SocialMedia";
+
 
 function Home() {
 
