@@ -47,7 +47,7 @@ function SocialButtons(props) {
                             <FontAwesomeIcon className="pinterest" style={{color: "white"}} size="2x"  icon={faPinterest} />
                         </Button> */}
                         <Button className="transparent btnBGV">
-                            <FontAwesomeIcon size="2x" style={{color: "white"}}  icon={faInstagram} />
+                            <FontAwesomeIcon size="2x" style={{color: "white"}}  icon={faInstagram} onClick={() => window.open("https://www.instagram.com/yourspacemaderight/")} />
                         </Button>
                         {/* <Button className="transparent btnBGV">
                             <FontAwesomeIcon className="youtube" style={{color: "white"}} size="2x"  icon={faYoutube} />
