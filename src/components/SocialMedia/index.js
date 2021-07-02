@@ -43,15 +43,12 @@ function SocialButtons(props) {
                         <Button className="btnBGV">
                             <FontAwesomeIcon className="facebook" style={{color: "white"}} size="2x" icon={faFacebook} onClick={() => window.open("https://www.facebook.com/Your-Space-Made-Right-102444671236614", "_blank")} />
                         </Button>
-                        {/* <Button className="transparent btnBGV"> 
-                            <FontAwesomeIcon className="pinterest" style={{color: "white"}} size="2x"  icon={faPinterest} />
-                        </Button> */}
-                        <Button className="transparent btnBGV">
-                            <FontAwesomeIcon size="2x" style={{color: "white"}}  icon={faInstagram} onClick={() => window.open("https://www.instagram.com/yourspacemaderight/")} />
+                        <Button className="transparent btnBGV"> 
+                            <FontAwesomeIcon className="pinterest" style={{color: "white"}} size="2x"  icon={faPinterest} onClick={() => window.open("https://www.pinterest.com/yourspacemaderight/_saved/", "_blank")} />
                         </Button>
-                        {/* <Button className="transparent btnBGV">
-                            <FontAwesomeIcon className="youtube" style={{color: "white"}} size="2x"  icon={faYoutube} />
-                        </Button> */}
+                        <Button className="transparent btnBGV">
+                            <FontAwesomeIcon size="2x" style={{color: "white"}}  icon={faInstagram} onClick={() => window.open("https://www.instagram.com/yourspacemaderight/", "_blank")} />
+                        </Button>
                     </ButtonGroup>
 
 
